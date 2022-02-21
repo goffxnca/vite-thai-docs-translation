@@ -32,18 +32,18 @@ module.exports = {
     },
 
     nav: [
-      { text: "Guide", link: "/guide/" },
-      { text: "Config", link: "/config/" },
-      { text: "Plugins", link: "/plugins/" },
+      { text: "คู่มือ", link: "/guide/" },
+      { text: "ปรับแต่ง", link: "/config/" },
+      { text: "ปลั๊กอิน", link: "/plugins/" },
       {
-        text: "Links",
+        text: "ลิ้งค์อื่นๆ",
         items: [
           {
-            text: "Twitter",
+            text: "ทวิตเตอร์",
             link: "https://twitter.com/vite_js",
           },
           {
-            text: "Discord Chat",
+            text: "ดิสคอร์ด",
             link: "https://chat.vitejs.dev",
           },
           {
@@ -51,7 +51,7 @@ module.exports = {
             link: "https://github.com/vitejs/awesome-vite",
           },
           {
-            text: "DEV Community",
+            text: "ชุมชนนักพัฒนา",
             link: "https://dev.to/t/vite",
           },
           {
@@ -59,25 +59,29 @@ module.exports = {
             link: "https://vite-rollup-plugins.patak.dev/",
           },
           {
-            text: "Changelog",
+            text: "ประวัติเวอร์ชั่น",
             link: "https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md",
           },
         ],
       },
       {
-        text: "Languages",
+        text: "ภาษา",
         items: [
           {
-            text: "English",
+            text: "อังกฤษ",
             link: "https://vitejs.dev",
           },
           {
-            text: "简体中文",
+            text: "จีน",
             link: "https://cn.vitejs.dev",
           },
           {
-            text: "日本語",
+            text: "ญี่ปุ่น",
             link: "https://ja.vitejs.dev",
+          },
+          {
+            text: "ไทย",
+            link: "https://th.vitejs.dev",
           },
         ],
       },
