@@ -1,10 +1,10 @@
-# Getting Started
+# เริ่มต้นใช้งาน
 
 <audio id="vite-audio">
   <source src="/vite.mp3" type="audio/mpeg">
 </audio>
 
-## Overview
+## เกี่ยวกับ Vite
 
 Vite (French word for "quick", pronounced `/vit/`<button style="border:none;padding:3px;border-radius:4px" id="play-vite-audio" onclick="document.getElementById('vite-audio').play();"><img src="/voice.svg" height="15"></button>, like "veet") is a build tool that aims to provide a faster and leaner development experience for modern web projects. It consists of two major parts:
 
@@ -16,11 +16,11 @@ Vite is opinionated and comes with sensible defaults out of the box, but is also
 
 You can learn more about the rationale behind the project in the [Why Vite](./why) section.
 
-## Browser Support
+## บราวเซอร์ที่ใช้งานร่วมได้
 
 - The default build targets browsers that support both [native ESM via script tags](https://caniuse.com/es6-module) and [native ESM dynamic import](https://caniuse.com/es6-module-dynamic-import). Legacy browsers can be supported via the official [@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy) - see the [Building for Production](./build) section for more details.
 
-## Trying Vite Online
+## ทดลองใช้งาน Vite ออนไลน์
 
 You can try Vite online on [StackBlitz](https://vite.new/). It runs the Vite-based build setup directly in the browser, so it is almost identical to the local setup but doesn't require installing anything on your machine. You can navigate to `vite.new/{template}` to select which framework to use.
 
@@ -35,7 +35,7 @@ The supported template presets are:
 |     [lit](https://vite.new/lit)     |     [lit-ts](https://vite.new/lit-ts)     |
 |  [svelte](https://vite.new/svelte)  |  [svelte-ts](https://vite.new/svelte-ts)  |
 
-## Scaffolding Your First Vite Project
+## การสร้างโปรเจค Vite
 
 ::: tip Compatibility Note
 Vite requires [Node.js](https://nodejs.org/en/) version >=12.2.0. However, some templates require a higher Node.js version to work, please upgrade if your package manager warns about it.
@@ -79,7 +79,7 @@ pnpm create vite my-vue-app -- --template vue
 
 See [create-vite](https://github.com/vitejs/vite/tree/main/packages/create-vite) for more details on each supported template: `vanilla`, `vanilla-ts`, `vue`, `vue-ts`, `react`, `react-ts`, `preact`, `preact-ts`, `lit`, `lit-ts`, `svelte`, `svelte-ts`.
 
-## Community Templates
+## สร้างโปรเจคจากเทมเพลต
 
 create-vite is a tool to quickly start a project from a basic template for popular frameworks. Check out Awesome Vite for [community maintained templates](https://github.com/vitejs/awesome-vite#templates) that include other tools or target different frameworks. You can use a tool like [degit](https://github.com/Rich-Harris/degit) to scaffold your project with one of the templates.
 
@@ -97,7 +97,7 @@ If the project uses `main` as the default branch, suffix the project repo with `
 npx degit user/project#main my-project
 ```
 
-## `index.html` and Project Root
+## ไฟล์ `index.html`
 
 One thing you may have noticed is that in a Vite project, `index.html` is front-and-central instead of being tucked away inside `public`. This is intentional: during development Vite is a server, and `index.html` is the entry point to your application.
 
@@ -111,7 +111,7 @@ Vite also supports [multi-page apps](./build#multi-page-app) with multiple `.htm
 
 Running `vite` starts the dev server using the current working directory as root. You can specify an alternative root with `vite serve some/sub/dir`.
 
-## Command Line Interface
+## คำสั่ง CLI ของ Vite
 
 In a project where Vite is installed, you can use the `vite` binary in your npm scripts, or run it directly with `npx vite`. Here is the default npm scripts in a scaffolded Vite project:
 
@@ -128,7 +128,7 @@ In a project where Vite is installed, you can use the `vite` binary in your npm 
 
 You can specify additional CLI options like `--port` or `--https`. For a full list of CLI options, run `npx vite --help` in your project.
 
-## Using Unreleased Commits
+## ใช้งาน Vite เวอร์ชั่นที่ยังไม่ Release ทางการ
 
 If you can't wait for a new release to test the latest features, you will need to clone the [vite repo](https://github.com/vitejs/vite) to your local machine and then build and link it yourself ([pnpm](https://pnpm.io/) is required):
 
@@ -143,6 +143,6 @@ pnpm link --global # you can use your preferred package manager for this step
 
 Then go to your Vite based project and run `pnpm link --global vite` (or the package manager that you used to link `vite` globally). Now restart the development server to ride on the bleeding edge!
 
-## Community
+## ชุมชนนักพัฒนา
 
 If you have questions or need help, reach out to the community at [Discord](https://discord.gg/4cmKdMfpU5) and [GitHub Discussions](https://github.com/vitejs/vite/discussions).

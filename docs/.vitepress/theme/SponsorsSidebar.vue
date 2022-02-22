@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import SponsorsGroup from './SponsorsGroup.vue'
-import { useData } from 'vitepress'
-const { frontmatter } = useData()
+import SponsorsGroup from "./SponsorsGroup.vue";
+import { useData } from "vitepress";
+const { frontmatter } = useData();
 </script>
 
 <template>
@@ -10,7 +10,7 @@ const { frontmatter } = useData()
       class="sponsors-aside-text"
       href="https://github.com/sponsors/yyx990803"
       target="_blank"
-      >Sponsors</a
+      >ผู้สนับสนุน</a
     >
     <SponsorsGroup tier="platinum" />
     <SponsorsGroup tier="gold" />
