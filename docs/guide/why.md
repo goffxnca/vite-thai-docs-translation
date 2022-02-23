@@ -1,10 +1,10 @@
 # ทำไมต้องใช้ Vite
 
-## The Problems
+## ปัญหา
 
-Before ES modules were available in browsers, developers had no native mechanism for authoring JavaScript in a modularized fashion. This is why we are all familiar with the concept of "bundling": using tools that crawl, process and concatenate our source modules into files that can run in the browser.
+ก่อนหน้าที่ ES modules จะสามารถใช้งานได้บนบราวเซอร์, developer ไม่มีวิธีการที่จะเขียน JavaScript ในลักษณะการเขียนแบบ module ที่รันโดยตรงบนบราวเซอร์ได้เลย นี่เลยเป็นเหตุผลว่าทำไมเหล่า developer ถึงคุ้นเคยกับคอนเซปของการ "bundling" หรือการมัดรวมหลายไฟล์เข้าด้วยกันนั่นเอง โดยเครื่องมือเหล่านี้จะใช้วิธีการอ่านทีละไฟล์, ประมวลผลและรวบรวม module ต่างๆ ส่งไปยังไฟล์เดียวหรือมากกว่าหนึ่งไฟล์ เพื่อที่จะทำให้สามารถรันบนบราวเซอร์ได้
 
-Over time we have seen tools like [webpack](https://webpack.js.org/), [Rollup](https://rollupjs.org) and [Parcel](https://parceljs.org/), which greatly improved the development experience for frontend developers.
+เมื่อเวลาผ่านไป เราก็ได้เห็นเครื่องมือใหม่ๆ ออกมาเรื่อยๆ อย่างเช่น [webpack](https://webpack.js.org/), [Rollup](https://rollupjs.org) และ [Parcel](https://parceljs.org/) ซึ่งได้ช่วยให้ประสบการณ์การพัฒนาระบบ frontend ของเหล่า developer ดีขึ้นเป็นอย่างมาก
 
 However, as we start to build more and more ambitious applications, the amount of JavaScript we are dealing with also increased exponentially. It is not uncommon for large scale projects to contain thousands of modules. We are starting to hit a performance bottleneck for JavaScript based tooling: it can often take an unreasonably long wait (sometimes up to minutes!) to spin up a dev server, and even with HMR, file edits can take a couple seconds to be reflected in the browser. The slow feedback loop can greatly affect developers' productivity and happiness.
 
